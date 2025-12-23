@@ -1,5 +1,5 @@
 import java.awt.desktop.SystemEventListener;
-import java.util.Scanner;
+import java.util.*;
 
 public class questions {
 
@@ -153,6 +153,8 @@ public class questions {
 
         int i = 0, j = arr.length - 1, temp;
 
+//        Arrays.sort(arr);
+
         for(;i < j; i++, j--){
             temp = arr[j];
             arr[j] = arr[i];
@@ -184,6 +186,60 @@ public class questions {
 
     }
 
+    public void dayHashMap(Scanner sc){
+        HashMap<Integer, String> hm = new HashMap<>();
+        hm.put(1, "Monday");
+        hm.put(2, "Tuesday");
+        hm.put(3, "Wednesday");
+        hm.put(4, "Thursday");
+        hm.put(5, "Friday");
+        hm.put(6, "Saturday");
+        hm.put(7, "Sunday");
+
+        System.out.print("Enter day number: ");
+        int n = sc.nextInt();
+        System.out.println(hm.get(n));
+
+        hm.put(7, "Ravivar");
+
+        System.out.println(hm.get(7));
+        System.out.println("Size: " + hm.size());
+    }
+
+    public void zeroToEnd(Scanner sc){
+
+        System.out.println("Enter ArrayList size: ");
+        int size = sc.nextInt();
+        sc.nextLine();
+        int i, j;
+//        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(0,0,43,4,-1,4,5,67,0,5,0,6,0));
+        ArrayList<Integer> list = new ArrayList<>();
+
+        System.out.println("Enter elements: ");
+        for(i = 0; i < size; i++){
+            j = sc.nextInt();
+            list.add(j);
+        }
+
+        System.out.println("Original List: " + list);
+
+
+        for(j = list.size() - 1, i = 0; j >= 0 && i < j; j--, i++){
+            while(j > 0 && list.get(j) == 0){
+                j--;
+//                System.out.println("j: " + j);
+            }
+//            System.out.println("i: " + i);
+            if(list.get(i) == 0){
+                    list.set(i,list.get(j));
+                    list.set(j, 0);
+
+            }
+        }
+        System.out.println("New List: " + list);
+
+    }
+
 
 
     public static void main(String[] args){
@@ -199,7 +255,8 @@ public class questions {
 //        q.prime();
 //        int[] arr = q.revArr();
 //        q.removeLeadingZero(sc);
-
+//        q.dayHashMap(sc);
+//        q.zeroToEnd(sc);
 
 
     }

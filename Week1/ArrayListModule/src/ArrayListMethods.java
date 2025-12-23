@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
 
 public class ArrayListMethods {
     public static void main(String[] args) {
@@ -70,6 +73,49 @@ public class ArrayListMethods {
         }
         System.out.println("Even = " + ec);
         System.out.println("Odd = " + oc);
+
+
+        System.out.println("Average");
+        int sum = 0;
+        for(Integer i : list){
+            sum += i;
+        }
+        System.out.println("avg = " + sum/(list.size()));
+
+
+        System.out.println("Largest and smallest");
+//        int l = 0, s = list.get(0);
+//        for(Integer i : list){
+//            sum += i;
+//        }
+//        System.out.println("avg = " + sum/(list.size()));
+        Collections.sort(list);
+        System.out.println("smallest = " + list.get(0));
+        System.out.println("largest = " + list.get(list.size()-1));
+        System.out.println();
+
+        System.out.println("Frequency of elements");
+//        System.out.println(list);
+        list.add(5);
+        list.add(5);
+        list.add(10);
+        list.add(5);
+        list.add(25);
+//        Collections.sort(list);
+        int[] count = new int[26];
+//        Integer temp = 0;
+        for(Integer temp : list){
+            count[temp]++;
+        }
+
+        for(int i = 0; i < 26; i++){
+            if(count[i] > 0){
+                System.out.println("number: " + i + " frequency: " + count[i]);
+            }
+        }
+//        list.con
+        HashMap<Integer,Integer> hm = new HashMap<>();
+
 
     }
 }

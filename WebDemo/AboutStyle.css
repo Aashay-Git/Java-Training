@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(244, 244, 244);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.Header-section {
+    background-color: antiquewhite;
+    height: auto;
+    padding: 40px;
+
+    /* text-align: center; */
+    /* pa */
+}
+
+.profile-image {
+    height: 220px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.header-name {
+    /* display: fl; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-wrapper {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-wrapper{
+    max-width: 800px;
+    margin: auto;
+}
+
+.skills-wrapper{
+    max-width: 800px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.education-wrapper{
+    max-width: 800px;
+    margin: auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-wrapper{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    /* grid-column: 5; */
+    /* grid-auto-columns: ; */
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+    font-size: 18px;
+}
+
+button{
+    font-size: 18px;
+    padding: 10px;
+    margin: 0px 20px 0px 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+button:hover{
+    transition: 0.5s ease-in-out;
+    padding: 30px;   
+}
+
+button:hover:after{
+    transition: 0.5s ease-in-out;
+    padding: 10px;  
+}
+
+a{
+    text-decoration: none;
+    color:cornflowerblue
+}
+
+.skills-wrapper ul li{
+    /* color:aqua; */
+    padding: 20px;
+    background-color: antiquewhite;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+nav{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .header-wrapper{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about-wrapper{
+        padding: 10px;
+    }
+
+    .skills-wrapper ul{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .education-wrapper{
+        padding: 10px;
+    }
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-image{
+        width: 75vw;
+        height: auto;
+    }
+
+}

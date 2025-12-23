@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArrayListModule/ArrayListModule.iml" filepath="$PROJECT_DIR$/ArrayListModule/ArrayListModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/File_Handling/File_Handling.iml" filepath="$PROJECT_DIR$/File_Handling/File_Handling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HashMapModule/HashMapModule.iml" filepath="$PROJECT_DIR$/HashMapModule/HashMapModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module_1.iml" filepath="$PROJECT_DIR$/.idea/Module_1.iml" />
     </modules>
   </component>
