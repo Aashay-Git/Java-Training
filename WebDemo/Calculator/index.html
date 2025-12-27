@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcScript.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Calculator</h1>
+    </div>
+
+    <section class="calc-section">
+        <div class="calc-bg">
+            <div class="input-area">
+                <input type="text" id="display" readonly></p>
+            </div>
+
+            <div class="button-area">
+                <button class="operation1" id="AC" onclick="clearValue(), buttonPress(id)">AC</button>
+                <button class="operation1" id="backspace" onclick="buttonPress(id), backspace()">&larr;</button>
+                <button class="operation1" id="%" onclick="buttonPress(id), appendValue(id)">%</button>
+                <button class="operation2" id="/" onclick="buttonPress(id), appendValue(id)">&divide;</button>
+
+                <button id="7" onclick="buttonPress(id), appendValue(id)">7</button>
+                <button id="8" onclick="buttonPress(id), appendValue(id)">8</button>
+                <button id="9" onclick="buttonPress(id), appendValue(id)">9</button>
+                <button class="operation2" id="*" onclick="buttonPress(id), appendValue(id)">&times;</button>
+
+                <button id="4" onclick="buttonPress(id), appendValue(id)">4</button>
+                <button id="5" onclick="buttonPress(id), appendValue(id)">5</button>
+                <button id="6" onclick="buttonPress(id), appendValue(id)">6</button>
+                <button class="operation2" id="-" onclick="buttonPress(id), appendValue(id)">&minus;</button>
+
+                <button id="1" onclick="buttonPress(id), appendValue(id)">1</button>
+                <button id="2" onclick="buttonPress(id), appendValue(id)">2</button>
+                <button id="3" onclick="buttonPress(id), appendValue(id)">3</button>
+                <button class="operation2" id="+" onclick="buttonPress(id), appendValue(id)">&plus;</button>
+
+                <button id="0" onclick="buttonPress(id), appendValue(id)">0</button>
+                <button id="00" onclick="buttonPress(id), appendValue(id)">00</button>
+                <button id="." onclick="buttonPress(id), appendValue(id)">.</button>
+                <button class="operation2" id="=" onclick="buttonPress(id), calculate()">&equals;</button>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="calcScript.js"></script>
+</body>
+
+</html>

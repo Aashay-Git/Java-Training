@@ -1,0 +1,23 @@
+.card{
+  background-color: antiquewhite;
+  padding: 40px;
+  border-radius: 20px;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  /* max-width: 450px; */
+  width: 450px;
+  /* height: auto; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.cardHolder{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* .line{
+  font-size: 50px;
+} */

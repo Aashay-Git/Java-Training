@@ -21,12 +21,12 @@
 // v("Testing2", x)
 // console.log(v)
 
-let arr = [1,2,3,4,5,6,7,8,9]
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-function sumOdds(arr){
+function sumOdds(arr) {
     let sum = 0
-    for(i = 0; i < arr.length; i++){
-        if(arr[i] % 2 != 0){
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 != 0) {
             sum += arr[i];
         }
     }
@@ -35,9 +35,9 @@ function sumOdds(arr){
 
 
 var s = (arr) => {
-let sum = 0
-    for(i = 0; i < arr.length; i++){
-        if(arr[i] % 2 != 0){
+    let sum = 0
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 != 0) {
             sum += arr[i];
         }
     }
@@ -46,3 +46,13 @@ let sum = 0
 
 sumOdds(arr)
 s(arr)
+
+
+// var a = 123
+// // let a = "test2"
+// {
+//     let a = "test"
+//     console.log(a)
+// }
+
+// console.log(a)
