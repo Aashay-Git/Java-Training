@@ -11,7 +11,7 @@ function Card({value}) {
         contact: { email: "mail@gmail.com", phone: 765432 }
     }
 
-    const users = [user1, user2, user1, user2, user1, user2]
+    const users = [user1, user2]
 
     const RenderCard = () => (
         users.map((user, index) => (
